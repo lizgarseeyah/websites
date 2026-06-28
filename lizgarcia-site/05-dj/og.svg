@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="LIRI Sound — DJ · producer · open-format energy">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff3d8b" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#34e7e4" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff3d8b"/>
+      <stop offset="1" stop-color="#34e7e4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0710"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="0" y="0" width="1200" height="10" fill="url(#bar)"/>
+  <circle cx="1040" cy="150" r="220" fill="#ff3d8b" opacity="0.07"/>
+  <circle cx="150" cy="540" r="160" fill="#34e7e4" opacity="0.06"/>
+  <text x="90" y="300" font-family="'Arial Black', sans-serif" font-size="92" font-weight="700" fill="#f6eefb">LIRI Sound</text>
+  <rect x="92" y="335" width="120" height="8" rx="4" fill="url(#bar)"/>
+  <text x="90" y="405" font-family="'Arial Black', sans-serif" font-size="38" font-weight="400" fill="#f6eefb" opacity="0.78">DJ · producer · open-format energy</text>
+</svg>

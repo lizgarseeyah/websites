@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nyra AI — Reasoning infrastructure for regulated work</title>
+<meta name="description" content="Nyra AI builds dependable reasoning infrastructure for teams in regulated industries. Governable, auditable, fast.">
+<meta name="theme-color" content="#05060a">
+<meta name="color-scheme" content="dark">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nyra AI — Reasoning infrastructure for regulated work">
+<meta property="og:description" content="Dependable, governable AI reasoning for teams that can't afford to guess.">
+<meta property="og:site_name" content="Nyra AI">
+<meta property="og:image" content="og.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305060a'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%236ee7ff' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%236ee7ff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Intro animation -->
+<div id="intro" class="intro" role="dialog" aria-label="Intro animation" aria-live="polite">
+  <canvas id="neural" aria-hidden="true"></canvas>
+  <div class="intro-center">
+    <span class="intro-mark" aria-hidden="true">
+      <svg viewBox="0 0 64 64" width="64" height="64"><circle cx="32" cy="32" r="20" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="6" fill="currentColor"/></svg>
+    </span>
+    <p class="intro-word">Nyra</p>
+  </div>
+  <button id="skipIntro" class="intro-skip" type="button">Skip</button>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Nyra AI home">
+      <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="3" fill="currentColor"/></svg>
+      <span>Nyra<span class="brand-ai">AI</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section id="top" class="hero" aria-labelledby="hero-h">
+    <canvas id="heroNeural" aria-hidden="true"></canvas>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Reasoning infrastructure</p>
+      <h1 id="hero-h">Intelligence you can <span class="grad">put under audit.</span></h1>
+      <p class="lede">Nyra builds the layer between large models and the work that can't be wrong — so every answer carries its evidence, its constraints, and a trail you can defend.</p>
+      <a class="cta" href="#contact">Request access</a>
+    </div>
+  </section>
+
+  <section id="about" class="band" aria-labelledby="about-h">
+    <div class="wrap two-col">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2 id="about-h">We make models accountable, not just impressive.</h2>
+      </div>
+      <div class="prose">
+        <p>Most AI demos collapse the moment a real policy is applied. Nyra starts from the opposite end: the rules, the record, the review. We wrap reasoning models in a governance layer that enforces what's allowed, captures why each step happened, and hands you an artifact a compliance team can actually sign off on.</p>
+        <p>The result is intelligence that behaves like infrastructure — predictable, observable, and built to be inspected. Teams in finance, health, and the public sector use Nyra to move fast without trading away the ability to explain themselves later.</p>
+        <ul class="stats" aria-label="At a glance">
+          <li><strong>100%</strong><span>decisions traced to source</span></li>
+          <li><strong>&lt;200ms</strong><span>median policy check</span></li>
+          <li><strong>SOC 2</strong><span>aligned by design</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="band band-alt" aria-labelledby="contact-h">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-h">Tell us what can't be wrong.</h2>
+        <p class="prose">We onboard a small number of teams each quarter. Send the shape of the problem and we'll tell you, honestly, whether Nyra is the right layer for it.</p>
+        <p class="contact-direct"><a href="mailto:hello@nyra.ai">hello@nyra.ai</a></p>
+      </div>
+      <form class="form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="msg">What needs to be dependable?</label>
+          <textarea id="msg" name="msg" rows="4" required></textarea>
+        </div>
+        <button class="cta" type="submit">Send</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>Nyra AI</span>
+    <span class="muted">&copy; <span id="yr"></span> Nyra Systems, Inc.</span>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+<script src="../shared/door-lock.js" data-site="ai-startup" defer></script>
+</body>
+</html>
