@@ -40,7 +40,8 @@
     { key: 'personal',        label: 'Liri',             href: '../04-personal/index.html' },
     { key: 'dj',              label: 'LIRI Sound',       href: '../05-dj/index.html' },
     { key: 'tech-consultant', label: 'Aegis Advisory',   href: '../06-tech-consultant/index.html' },
-    { key: 'real-estate',     label: 'Meridian Realty',  href: '../07-real-estate/index.html' }
+    { key: 'real-estate',     label: 'Meridian Realty',  href: '../07-real-estate/index.html' },
+    { key: 'apparel',         label: 'Liri Co.',         href: '../08-apparel/index.html' }
   ];
 
   // Private destination, only revealed by DASHBOARD_PIN. `key` 'dashboard' so it

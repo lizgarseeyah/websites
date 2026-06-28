@@ -3,7 +3,7 @@
 One deployable site that contains:
 
 - a quiet **front door** (`index.html`) at the root,
-- **7 fully independent websites**, each with its own design, content, and branding,
+- **8 fully independent websites**, each with its own design, content, and branding,
 - a private **Cloud9 Ops dashboard**,
 
 …all connected only by a hidden, PIN-gated **"secret door"** in the bottom-right corner of
@@ -40,6 +40,7 @@ every page. There is no visible navigation between the sites — the door is the
 ├── 05-dj/                LIRI Sound         (About, Services, Work, Contact · @lirionthecourt)
 ├── 06-tech-consultant/   Aegis Advisory     (About, Services, Work, Contact · no socials)
 ├── 07-real-estate/       Meridian Realty    (About, Contact · @liriathome, IG/TikTok)
+├── 08-apparel/           Liri Co.           (Lines, Shop preview, Lookbook, Story, Signup · @liriathome)
 ├── dashboard/            Cloud9 Ops dashboard (static frontend)
 │   ├── index.html
 │   └── assets/           scripts + styles
