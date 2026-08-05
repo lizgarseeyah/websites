@@ -39,7 +39,7 @@
     { key: 'sports-agency',   label: 'Baseline Group',   href: '../03-sports-agency/index.html' },
     { key: 'personal',        label: 'Liri',             href: '../04-personal/index.html' },
     { key: 'dj',              label: 'LIRI Sound',       href: '../05-dj/index.html' },
-    { key: 'tech-consultant', label: 'Aegis Advisory',   href: '../06-tech-consultant/index.html' },
+    { key: 'tech-consultant', label: 'HarveStax',        href: '../06-tech-consultant/index.html' },
     { key: 'real-estate',     label: 'Meridian Realty',  href: '../07-real-estate/index.html' },
     { key: 'apparel',         label: 'Liri Co.',         href: '../08-apparel/index.html' }
   ];
