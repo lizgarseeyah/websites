@@ -24,7 +24,26 @@
   if (form) form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (!form.checkValidity()) { note.textContent = 'Please fill in every field.'; note.style.color = '#e7b3b3'; return; }
-    note.style.color = ''; note.textContent = 'Thank you — I\'ll be in touch within a day.';
-    form.reset();
+    note.style.color = ''; note.textContent = 'Sending…';
+    var btn = form.querySelector('button[type="submit"]');
+    if (btn) btn.disabled = true;
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function (res) {
+      if (res.ok) {
+        note.style.color = ''; note.textContent = "Thank you — I'll be in touch within a day.";
+        form.reset();
+      } else {
+        return res.json().then(function (d) {
+          note.style.color = '#e7b3b3';
+          note.textContent = (d && d.errors && d.errors.map(function (x){return x.message}).join(', ')) || 'Something went wrong. Please try again.';
+        });
+      }
+    }).catch(function () {
+      note.style.color = '#e7b3b3';
+      note.textContent = 'Network error. Please try again in a moment.';
+    }).finally(function () { if (btn) btn.disabled = false; });
   });
 })();
