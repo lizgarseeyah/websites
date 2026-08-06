@@ -84,18 +84,18 @@
     }).then(function (res) {
       if (res.ok) {
         note.style.color = '';
-        note.textContent = "Thanks — your message is on its way. I'll reply within one business day.";
+        note.textContent = "Thanks. Your message is on its way. I'll reply within one business day.";
         form.reset();
       } else {
         return res.json().then(function (data) {
-          var msg = (data && data.errors && data.errors.map(function (x) { return x.message; }).join(', ')) || 'Something went wrong. Please email lizgsmc@gmail.com directly.';
+          var msg = (data && data.errors && data.errors.map(function (x) { return x.message; }).join(', ')) || 'Something went wrong. Please try again in a moment.';
           note.style.color = '#f87171';
           note.textContent = msg;
         });
       }
     }).catch(function () {
       note.style.color = '#f87171';
-      note.textContent = 'Network error. Please email lizgsmc@gmail.com directly.';
+      note.textContent = 'Network error. Please try again in a moment.';
     }).finally(function () {
       if (btn) btn.disabled = false;
     });
