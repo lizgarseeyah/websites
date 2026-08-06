@@ -103,3 +103,11 @@ h1{font-size:clamp(2.8rem,6.5vw,5rem)}
   .hero-frames{height:320px;order:-1}
   .two-col,.contact-grid{grid-template-columns:1fr;gap:34px}
 }
+
+/* DRE license visibility */
+.dre-badge{margin:18px 0 0;display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;letter-spacing:.02em;color:var(--ink);opacity:.78;
+  border:1px solid rgba(29,59,48,.22);border-radius:999px;padding:8px 16px;background:rgba(188,138,60,.08)}
+.dre-badge strong{color:var(--green);font-weight:700}
+.license{margin:20px 0 0;font-size:13px;letter-spacing:.02em;color:rgba(255,255,255,.72)}
+.license strong{color:#fff;font-weight:700}
